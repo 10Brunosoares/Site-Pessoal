@@ -1,0 +1,98 @@
+#home{
+    background-image: linear-gradient(
+        rgb(245,240,236),
+        rgb(53,64,69)
+        );
+        height: 100vh;
+        color: black;
+        font-family:sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-top: 0em;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: rgb(53,64,69);
+    padding: 3px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#header_menu li{
+    display: flex;
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+#header_menu a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#header_menu a::after{
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #7098f6, #571074);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+#header_menu a:hover::after{
+    width: 40px;
+}
+
+#titulo{
+    margin-left: 1em;
+    margin-top: 0em;
+}
+
+#foto_home{
+    display: flex;
+    max-width: 200px;
+    margin-left: 4em;
+    margin-right: 1em;
+}
+
+#inicio{
+    margin-top: 7em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#apresentacao_incial{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0em;
+}
+
+#name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    margin-left: 0em;
+    font-size: 40px;
+}
+
+#texto_home{
+    display: flex;
+    margin-top: 0;
+    margin-right: 46em;
+    font-style: italic;
+    font-size: 12px;
+}
