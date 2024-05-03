@@ -65,11 +65,6 @@ body {
 }
 
 /* Estilos para a seção de introdução */
-#geral {
-    display: flex;
-    flex-direction: column;
-}
-
 #inicio {
     margin-top: 2em;
     margin-left: 1em;
@@ -117,7 +112,6 @@ body {
     width: 100%; /* Defina a largura do elemento para 100% */
     margin-left: auto; /* Margem esquerda automática */
     margin-right: auto; /* Margem direita automática */
-    margin-bottom:  auto;
     justify-content: center;
 }
 
