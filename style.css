@@ -7,11 +7,12 @@ body {
 /* Estilos para a seção principal */
 #home {
     background-image: linear-gradient(rgb(245, 240, 236), rgb(53, 64, 69));
-    height: 100vh;
+    min-height: 100vh;
     color: black;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Estilos para o menu */
@@ -23,7 +24,13 @@ body {
     padding: 3px;
     text-align: center;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+}
+
+#header_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #header_menu li {
@@ -93,13 +100,32 @@ body {
     font-size: 12px;
 }
 
-/* Media query para dispositivos com largura máxima de 768px */
+/* Media query para ajustes em todos os tamanhos de tela */
+@media screen and (max-width: 1200px) {
+    #foto_home {
+        max-width: 150px;
+        margin-left: 2em;
+        margin-right: 0.5em;
+    }
+    #texto_home {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #foto_home {
+        max-width: 120px;
+        margin-left: 1em;
+        margin-right: 0.5em;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #menu {
         flex-direction: column;
         align-items: center;
     }
-    #menu ul {
+    #header_menu ul {
         padding: 0;
     }
     #header_menu li {
