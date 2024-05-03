@@ -104,6 +104,122 @@ body {
     font-size: 12px;
 }
 
+.menu_social {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%; /* Defina a largura do elemento para 100% */
+    margin-left: auto; /* Margem esquerda automática */
+    margin-right: auto; /* Margem direita automática */
+    justify-content: center;
+}
+
+
+.celular{
+    background-image: url('/icons/whatsapp.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    font-size: 0;
+    cursor: pointer;
+    margin-right: 15px;
+    animation: swingPendulum 2s infinite alternate;
+    transform-origin: center bottom;
+}
+
+.email{
+    background-image: url('/icons/outlook.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    font-size: 0;
+    cursor: pointer;
+    margin-right: 15px;
+    animation: swingPendulum 2s infinite alternate;
+    transform-origin: center bottom;
+}
+
+.linkedin{
+    background-image: url('/icons/linkedin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    font-size: 0;
+    cursor: pointer;
+    margin-right: 15px;
+    animation: swingPendulum 2s infinite alternate;
+    transform-origin: center bottom;
+}
+
+.instagram{
+    background-image: url('/icons/instagram.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    font-size: 0;
+    cursor: pointer;
+    margin-right: 15px;
+    animation: swingPendulum 2s infinite alternate;
+    transform-origin: center bottom;
+}
+
+.github{
+    background-image: url('/icons/github.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    font-size: 0;
+    cursor: pointer;
+    margin-right: 15px;
+    animation: swingPendulum 2s infinite alternate;
+    transform-origin: center bottom;
+}
+
+.celular:hover {
+    animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o botão */
+}
+
+.email:hover {
+    animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o botão */
+}
+
+.linkedin:hover {
+    animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o botão */
+}
+
+.instagram:hover {
+    animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o botão */
+}
+
+.github:hover {
+    animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o botão */
+}
+
+@keyframes swingPendulum {
+    0% {
+        transform: rotate(-10deg); /* Inclinação para a esquerda */
+    }
+    100% {
+        transform: rotate(10deg); /* Inclinação para a direita */
+    }
+}
+
 /* Media query para ajustes em todos os tamanhos de tela */
 @media screen and (max-width: 1200px) {
     #foto_home {
