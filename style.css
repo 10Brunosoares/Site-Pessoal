@@ -28,7 +28,7 @@ body {
 }
 
 .titulo{
-    margin-left: 2em;
+    margin-left: 0.5em;
     width: 200px;
     animation: typing 2s steps(20), blink .5s step-end infinite alternate;;
 
