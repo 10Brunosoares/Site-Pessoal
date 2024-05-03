@@ -78,6 +78,7 @@ body {
     max-width: 250px;
     margin-left: 4em;
     margin-right: 1em;
+    border-radius: 5%;
 }
 
 #apresentacao_inicial {
