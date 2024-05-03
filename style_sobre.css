@@ -18,7 +18,7 @@ body {
 /* Estilos para o menu */
 #menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     background-color: rgb(53, 64, 69);
     padding: 10px;
@@ -100,44 +100,24 @@ body {
 #apresentacao_inicial {
     display: flex;
     flex-direction: column;
-    margin-left: 1em; /* Ajustado o espaçamento à esquerda */
+    margin-left: 2em; /* Ajustado o espaçamento à esquerda */
+    margin-right: 2em;
     text-align: justify; /* Justifica o texto */
 }
 
-.container {
-    width: 100%; /* Certifica-se de que o container ocupe toda a largura disponível */
-}
-
-img {
-    max-width: 250px; /* Definido o máximo de largura para a imagem */
-    margin-right: 20px; /* Adiciona uma margem à direita para separar a imagem do texto */
-}
-
-#foto_sobre {
+/*#foto_sobre {
     max-width: 250px;
     margin-left: 3em;
     margin-right: 2em;
     margin-top: 3em;
     border-radius: 50%;
-}
+}*/
 
 #texto_apresentacao {
     margin-top: 4em;
     margin-bottom: 0;
     font-size: 15px;
-}
-
-#name {
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    margin-left: 0em;
-    font-size: 40px;
-}
-
-#texto_home {
-    margin-top: 0;
-    font-style: italic;
-    font-size: 12px;
+    align-items: center;
 }
 
 .botoes {
@@ -156,7 +136,7 @@ img {
     flex-direction: column;
     align-items: center;
     margin: 0em;
-    margin-bottom: auto;
+    margin-bottom: 0em;
 }
 
 #contato{
@@ -237,52 +217,5 @@ img {
     }
     100% {
         transform: rotate(10deg); /* Inclinação para a direita */
-    }
-}
-
-/* Media query para ajustes em todos os tamanhos de tela */
-@media screen and (max-width: 1200px) {
-    #foto_sobre {
-        max-width: 150px;
-        margin-left: 2em;
-        margin-right: 0em;
-    }
-    #texto_home {
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    #foto_sobre {
-        max-width: 120px;
-        margin-left: 1em;
-        margin-right: 0.5em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #menu {
-        flex-direction: column;
-        align-items: center;
-    }
-    #header_menu ul {
-        padding: 0;
-    }
-    #header_menu li {
-        margin: 10px 0;
-    }
-    #foto_sobre {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-    #inicio {
-        flex-direction: column;
-        align-items: center;
-    }
-    #apresentacao_inicial {
-        text-align: center;
-    }
-    #texto_home {
-        margin-right: 0;
     }
 }

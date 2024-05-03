@@ -18,7 +18,7 @@ body {
 /* Estilos para o menu */
 #menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     background-color: rgb(53, 64, 69);
     padding: 10px;
@@ -145,7 +145,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0em;
-    margin-bottom: auto;
+    margin-bottom: 0em;
 }
 
 #contato{
