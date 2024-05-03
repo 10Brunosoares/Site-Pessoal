@@ -6,8 +6,8 @@ body {
 
 /* Estilos para a seção principal */
 #home {
-    background-color: rgb(245, 240, 236);
-    min-width: 100vh;
+    background-image: linear-gradient(rgb(245, 240, 236), rgb(53, 64, 69));
+    min-height: 100vh;
     color: black;
     font-family: sans-serif;
     display: flex;
@@ -68,7 +68,7 @@ body {
 #inicio {
     margin-top: 2em;
     margin-left: 1em;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
