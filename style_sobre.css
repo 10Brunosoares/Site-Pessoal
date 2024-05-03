@@ -32,7 +32,6 @@ body {
     margin-left: 0.5em;
     width: 350px;
     animation: typing 2s steps(20), blink .5s step-end infinite alternate;;
-
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -92,16 +91,17 @@ body {
 #inicio {
     margin-top: 2em;
     margin-left: 1em;
-    margin-bottom: 10%;
+    margin-bottom: 5%; /* Reduzido para uma porcentagem menor */
     display: flex;
     flex-direction: row;
+    align-items: center; /* Adicionado para centralizar verticalmente os elementos */
 }
 
 #apresentacao_inicial {
-    margin-left: 0em;
-    margin-right: 10em;
-    text-align: justify;
-    
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em; /* Ajustado o espaçamento à esquerda */
+    text-align: justify; /* Justifica o texto */
 }
 
 .container {
@@ -109,7 +109,7 @@ body {
 }
 
 img {
-    float: left; /* Faz a imagem flutuar para a esquerda */
+    max-width: 250px; /* Definido o máximo de largura para a imagem */
     margin-right: 20px; /* Adiciona uma margem à direita para separar a imagem do texto */
 }
 
@@ -126,7 +126,6 @@ img {
     margin-bottom: 0;
     font-size: 15px;
 }
-
 
 #name {
     margin-top: 0.1em;
