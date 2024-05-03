@@ -1,44 +1,43 @@
-#home{
-    background-image: linear-gradient(
-        rgb(245,240,236),
-        rgb(53,64,69)
-        );
-        height: 100vh;
-        color: black;
-        font-family:sans-serif;
-        display: flex;
-        flex-direction: column;
-        margin-left: 0em;
-        margin-right: 0em;
-        margin-top: 0em;
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
 }
 
-#menu{
+/* Estilos para a seção principal */
+#home {
+    background-image: linear-gradient(rgb(245, 240, 236), rgb(53, 64, 69));
+    height: 100vh;
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para o menu */
+#menu {
     display: flex;
     flex-direction: row;
     color: white;
-    background-color: rgb(53,64,69);
+    background-color: rgb(53, 64, 69);
     padding: 3px;
     text-align: center;
     justify-content: space-between;
     align-items: baseline;
 }
 
-#header_menu li{
-    display: flex;
+#header_menu li {
     display: inline-block;
     margin: 0 10px;
-
 }
 
-#header_menu a{
-    display: flex;
+#header_menu a {
     text-decoration: none;
     color: white;
     position: relative;
 }
 
-#header_menu a::after{
+#header_menu a::after {
     content: "";
     width: 0px;
     height: 4px;
@@ -49,23 +48,17 @@
     transition: width 0.5s;
 }
 
-#header_menu a:hover::after{
+#header_menu a:hover::after {
     width: 40px;
 }
 
-#titulo{
+#titulo {
     margin-left: 1em;
     margin-top: 0em;
 }
 
-#foto_home{
-    display: flex;
-    max-width: 200px;
-    margin-left: 4em;
-    margin-right: 1em;
-}
-
-#inicio{
+/* Estilos para a seção de introdução */
+#inicio {
     margin-top: 7em;
     margin-left: 1em;
     display: flex;
@@ -74,25 +67,56 @@
     align-items: center;
 }
 
-#apresentacao_incial{
+#foto_home {
+    max-width: 200px;
+    margin-left: 4em;
+    margin-right: 1em;
+}
+
+#apresentacao_inicial {
     display: flex;
     flex-direction: column;
     margin-left: 0em;
 }
 
-#name{
-    display: flex;
-    flex-direction: column;
+#name {
     margin-top: 0.1em;
     margin-bottom: 0.1em;
     margin-left: 0em;
     font-size: 40px;
 }
 
-#texto_home{
-    display: flex;
+#texto_home {
     margin-top: 0;
     margin-right: 46em;
     font-style: italic;
     font-size: 12px;
+}
+
+/* Media query para dispositivos com largura máxima de 768px */
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu ul {
+        padding: 0;
+    }
+    #header_menu li {
+        margin: 10px 0;
+    }
+    #foto_home {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    #inicio {
+        flex-direction: column;
+        align-items: center;
+    }
+    #apresentacao_inicial {
+        text-align: center;
+    }
+    #texto_home {
+        margin-right: 0;
+    }
 }
