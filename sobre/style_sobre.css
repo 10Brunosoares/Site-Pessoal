@@ -27,9 +27,10 @@ body {
     align-items: center;
 }
 
-.titulo{
+/* colocando transição no titulo de bem-vindo */
+.titulo_sobre {
     margin-left: 0.5em;
-    width: 200px;
+    width: 350px;
     animation: typing 2s steps(20), blink .5s step-end infinite alternate;;
 
     white-space: nowrap;
@@ -97,20 +98,13 @@ body {
     align-items: center;
 }
 
-#foto_home {
-    max-width: 250px;
-    margin-left: 4em;
-    margin-right: 1em;
-    border-radius: 5%;
-}
-
 #apresentacao_inicial {
     display: flex;
     flex-direction: column;
     margin-left: 0em;
 }
 
-#texto_ola{
+#texto_apresentacao {
     margin-bottom: 0;
     font-size: 20px;
 }
