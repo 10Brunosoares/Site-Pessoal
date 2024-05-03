@@ -61,21 +61,21 @@ body {
 
 #titulo {
     margin-left: 1em;
-    margin-top: 0em;
+    margin-top: 1em;
 }
 
 /* Estilos para a seção de introdução */
 #inicio {
     margin-top: 7em;
     margin-left: 1em;
+    margin-bottom: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
 #foto_home {
-    max-width: 200px;
+    max-width: 250px;
     margin-left: 4em;
     margin-right: 1em;
 }
@@ -84,6 +84,11 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 0em;
+}
+
+#texto_ola{
+    margin-bottom: 0;
+    font-size: 20px;
 }
 
 #name {
@@ -95,7 +100,6 @@ body {
 
 #texto_home {
     margin-top: 0;
-    margin-right: 46em;
     font-style: italic;
     font-size: 12px;
 }
@@ -105,7 +109,7 @@ body {
     #foto_home {
         max-width: 150px;
         margin-left: 2em;
-        margin-right: 0.5em;
+        margin-right: 0em;
     }
     #texto_home {
         margin-right: 0;
